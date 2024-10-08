@@ -1,8 +1,9 @@
-We choose Option 1 as our course project.
+# We choose Option 1 as our course project.
 
-Project Members: Rolian Tan, Micah Mbaldona
+## Project Members: Rolian Tan, Micah Mbaldona
 
-Feature Description:
+# Task 1
+## Feature Description:
 
 - `id`: Identifier combined by `sofifa_id` and `year`, unique (text)
 - `sofifa_id`: Fifa player identifier (numeric)
@@ -60,15 +61,7 @@ Feature Description:
 - `defending_sliding_tackle`: Rating for the player's sliding tackle ability, 0-100 (numeric)
 
 
-
-
-
-
-
-
-
-
-Reasons to use PostgreSQL rather than NoSQL database:
+## Reasons to use PostgreSQL rather than NoSQL database:
 1. Complex Queries and Aggregation
 PostgreSQL supports efficient joins and aggregations, allowing to easily query across tables (e.g finding clubs by years, calculating averages). NoSQL databases often require more complex operations for similar queries.
 2. Data Integrity Validation
