@@ -1,6 +1,6 @@
 # We choose Option 1 as our course project.
 
-## Project Members: Rolian Tan, Micah Mbaldona
+## Project Members: Rolian Tan, Micah Baldonado
 
 # Task 1
 ## Feature Description:
