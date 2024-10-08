@@ -1,4 +1,6 @@
-We choose Option-1 as our project.
+We choose Option 1 as our course project.
+
+Project Members: Rolian Tan, Micah Mbaldona
 
 Feature Description:
 
