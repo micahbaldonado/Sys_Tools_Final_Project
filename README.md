@@ -2,7 +2,11 @@
 
 # We choose Option 1 as our course project.
 
-## Project Members: Rolian Tan, Micah Baldonado (Equal Contributions)
+<div style="display: flex; justify-content: space-between; margin: 0 20px;">
+  <span>Micah Baldonado</span>
+  <span>Rolian Tan</span>
+</div>
+
 
 # Instructions:
 1. We assemble all the functions, running process and output process in the 'final_sys_tools_project_code.ipynb' file, you can run it directly on the windows system.
