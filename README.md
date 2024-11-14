@@ -75,18 +75,24 @@ Since this dataset contains player bio information, player ability information a
 # Attention: Due to the different experiemnts' results on local machine and on the cloud, we will use the local outputs as refernece. 
 ## Since this is a regression task so we choose regressors
 ### Pyspark model:
-
-### Pytorch Parameter Tuning:
-
+1. we use two mainstream regressor: DecisionTree Regressor, RandomForest Regressor
+2. `DecisionTree`: Simplicity and ease of interpretability, making it suitable for quick insights.
+3. `RandomForest`: Robustness and ability to reduce overfitting through ensemble learning, providing more reliable insights.
+### Pyspark Parameter Tuning:
+We use Paramgrid to find the best pairs of parameters as the tuning method. 
+1. `DecisionTree`: mean absolute error (MAE) of 0.1869
+2. `RandomForest`: a slightly higher MAE of 0.2003, may because of the limitation of the hyperparmeter settings or the performance threshold of the tree structure regressors on this large dataset.  
+Here are the explaination of the hyper parametes:
+1. `maxDepth`: Controls the depth of the trees. A higher maxDepth enables the model to capture more complex patterns, but it can lead to overfitting if set too high. For both models, tuning maxDepth was essential to balance model complexity and generalization.
+2. `numTrees`: Specific to the Random Forest model, numTrees defines how many decision trees are used. More trees generally lead to better performance, but with diminishing returns and increased computational cost.
 ### Pytorch model:
 1. We create two neural networks to compare: shallow NN, deep NN  
 2. `SimpleNN`: Testing the model’s performance with fewer parameters and a simpler architecture. Leading to faster training times and less risk of overfitting on smaller datasets.  
 3. `DeepNN`: More complex architecture with three hidden layers, which is designed to capture more intricate patterns or high-level features in the data.  
 ### Pytorch Parameter Tuning:  
   1. `Batch Size (bs)`: this minibatch could excellerate the training process and won't exceed the computation resource limits  
-  2. `Learning Rate (lr)`: determines the pace of gradients updating, when lr goes from 1e-2 to 1e-3, with epochs fixed, it brings a 27% MSE drop for simpleNN (from 0.509 to 0.371) and a 46% MSE drop for deepNN (from 0.588 to 0.318)  
-  3. `Epochs`: higher epochs will provide more times of training to make sure the model converges, when lr=1e-5, incresing the epochs from 20 to 40 brings MSE drop for both simpleNN (0.57->0.50) and deepNN(0.86->0.59), which means that more epochs will provide more time for the model to converge and fit the data. And also, for the deepNN, more epochs are   required for it to converge.  
+  2. `Learning Rate (lr)`: determines the pace of gradients updating, when lr goes from 1e-2 to 1e-3, with epochs fixed, it brings a 28% MSE drop for simpleNN (from 0.251 to 0.178) and a 33% MSE drop for deepNN (from 0.153 to 0.107)  
+  3. `Epochs`: higher epochs will provide more times of training to make sure the model converges, when lr=1e-5, incresing the epochs from 20 to 40 brings no MSE drop for both simpleNN (0.251->0.297) and deepNN(0.153->0.161), which means the models are already converged.   
   4. `model_type`: this decides which model to use  
-  compare with simpleNN and deepNN, we will find two things:  
-    1. when the hyperparameter is the same (lr=1e-2, epochs=20), the deepNN is more complicated to converge compared with simpleNN. (0.86 v.s 0.57)  
-    2. while the learning rate is right and with enough training (lr=1e-3, epochs=40), the deepNN can achieve better results copmpared with simpleNN, which also means that the deeper network has the risk to overfit the data.  
+  compare with `simpleNN` and `deepNN`, we will find that: when the hyperparameter are the same, the deepNN is more complicated to learn more   features compared with simpleNN, so the deepNN always reach better MSE scores. 
+    
