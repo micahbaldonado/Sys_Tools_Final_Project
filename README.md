@@ -2,10 +2,8 @@
 
 # We choose Option 1 as our course project.
 
-<div style="display: flex; justify-content: space-between; margin: 0 20px;">
-  <span>Micah Baldonado</span>
-  <span>Rolian Tan</span>
-</div>
+| Rolian Tan | Micah Baldonado|
+|:-----------|--------------------------------------:|
 
 
 # Instructions:
