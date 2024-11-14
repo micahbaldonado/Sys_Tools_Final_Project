@@ -2,7 +2,21 @@
 
 # We choose Option 1 as our course project.
 
-## Project Members: Rolian Tan, Micah Baldonado
+## Project Members: Rolian Tan, Micah Baldonado (Equal Contributions)
+
+# Instructions:
+1. We assemble all the functions, running process and output process in the 'final_sys_tools_project_code.ipynb' file, you can run it directly on the windows system.
+2. the 'final_sys_tools_project_code-cloud.ipynb' is our results while runing on the cloud. 
+3. Here are some path you need to modify:
+    1. jdbc_driver_path = " " --- your jdbc .jar file
+    2. dataset_folder_path  = " " --- your .csv data folder files
+    3. db_properties['username']=" " --- postgres username
+    4. db_properties['password']=" " --- passpord
+    5. db_properties['url']= " " --- the url to link to the postgres
+    6. db_properties['table']= " " --- the table name you want to write to
+4. Make sure you have installed every libraries we imported. you can use 'pip install LIBRARY NAME' to install missing ones.
+5. Finally, run the entire jupyter notebook code block by block, you could reimplement our results
+6. If you have trouble doing this, you can refer to our demo video or create issues in this github repository. 
 
 # Task 1
 ## Feature Description:
