@@ -2,7 +2,7 @@
 
 # We choose Option 1 as our course project.
 
-Rolian Tan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Micah Baldonado
+## Rolian Tan &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ## Micah Baldonado
 
 
 # Instructions:
