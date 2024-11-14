@@ -2,7 +2,7 @@
 
 # We choose Option 1 as our course project.
 
-| Rolian Tan | Micah Baldonado (Equal Contributions) |
+| Rolian Tan | Micah Baldonado |
 |:-----------|--------------------------------------:|
 
 
