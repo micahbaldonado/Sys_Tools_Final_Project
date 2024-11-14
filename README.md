@@ -73,6 +73,10 @@ Since this dataset contains player bio information, player ability information a
 
 # Task 3 - Machine Leaning
 ## Since this is a regression task so we choose regressors
+### Pyspark model:
+
+### Pytorch Parameter Tuning:
+
 ### Pytorch model:
 1. We create two neural networks to compare: shallow NN, deep NN  
 2. `SimpleNN`: Testing the model’s performance with fewer parameters and a simpler architecture. Leading to faster training times and less risk of overfitting on smaller datasets.  
@@ -82,6 +86,6 @@ Since this dataset contains player bio information, player ability information a
   2. `Learning Rate (lr)`: determines the pace of gradients updating, when lr goes from 1e-2 to 1e-3, with epochs fixed, it brings a 27% MSE drop for simpleNN (from 0.509 to 0.371) and a 46% MSE drop for deepNN (from 0.588 to 0.318)  
   3. `Epochs`: higher epochs will provide more times of training to make sure the model converges, when lr=1e-5, incresing the epochs from 20 to 40 brings MSE drop for both simpleNN (0.57->0.50) and deepNN(0.86->0.59), which means that more epochs will provide more time for the model to converge and fit the data. And also, for the deepNN, more epochs are   required for it to converge.  
   4. `model_type`: this decides which model to use  
-  compare with simpleNN and deepNN, we will find tow thing:  
+  compare with simpleNN and deepNN, we will find two things:  
     1. when the hyperparameter is the same (lr=1e-2, epochs=20), the deepNN is more complicated to converge compared with simpleNN. (0.86 v.s 0.57)  
     2. while the learning rate is right and with enough training (lr=1e-3, epochs=40), the deepNN can achieve better results copmpared with simpleNN, which also means that the deeper network has the risk to overfit the data.  
