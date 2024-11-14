@@ -72,6 +72,7 @@ With ACID compliance and support for constraints, PostgreSQL ensures accurate an
 Since this dataset contains player bio information, player ability information and club information, so PostgreSQL has more potential to create multiple sub-tables by using unique foreign keys. However, the NoSQL is a non-relation method.
 
 # Task 3 - Machine Leaning
+# Attention: Due to the different experiemnts' results on local machine and on the cloud, we will use the local outputs as refernece. 
 ## Since this is a regression task so we choose regressors
 ### Pyspark model:
 
