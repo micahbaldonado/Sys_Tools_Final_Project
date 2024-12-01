@@ -1,9 +1,81 @@
-# *Video Link: https://cmu.box.com/s/8mgpujfg59x5ory8w8dg12z1wqv5sl3r*
+# [*Video Explanation of our Project*](https://cmu.box.com/s/8mgpujfg59x5ory8w8dg12z1wqv5sl3r)
 
-# We choose Option 1 as our course project.
+# Systems and Toolchains Course Project
 
-| Rolian Tan | Micah Baldonado |
-|:-----------|--------------------------------------:|
+### **Overview**
+This project, completed as part of the **Systems and Toolchains** course at Carnegie Mellon University, involves working with the FIFA dataset to perform database management, analytics, machine learning, and cloud deployment tasks. **Grade: 107/100**, with additional credit for exceptional performance.
+
+---
+
+### **Key Skills**
+- **Programming Languages:** Python, SQL  
+- **Frameworks and Libraries:** PyTorch, Spark  
+- **Database Management:** PostgreSQL (schema design, data ingestion, querying)  
+- **Big Data Technologies:** Apache Spark (data pipelines, distributed processing)  
+- **Cloud Deployment:** Analytics and ML tasks on cloud infrastructure  
+---
+
+### Dataset Description
+The FIFA dataset, available on [Kaggle](https://www.kaggle.com/stefanoleone992/fifa-22-complete-player-dataset), contains soccer player statistics for 2015–2022:
+- **Male player data:** Available for years 2015–2022.
+- **Female player data:** Available for years 2016–2022.
+- **Key Features:**
+  - Player attributes such as age, nationality, club, contract details, and skill ratings.
+  - Incomplete data for career mode and female players (excluded in analysis).
+
+---
+
+### Tasks Completed
+
+#### **Task I: Database Management**
+- **Objective:** Build and populate a PostgreSQL database table with the dataset.
+- Steps:
+  - Ingested data from multiple years into a unified PostgreSQL table under the `fifa` schema.
+  - Ensured column alignment and added a `year` column to uniquely identify records.
+  - Database allowed for seamless querying and integration with analytics pipelines.
+  
+- **Why PostgreSQL?**
+  - **Structured Data:** The relational nature of PostgreSQL is ideal for structured datasets like FIFA.
+  - **Consistency:** Ensures data integrity across multiple years.
+  - **Ease of Querying:** SQL's expressive power is crucial for complex queries, which would be cumbersome in NoSQL databases.
+
+---
+
+#### **Task II: Big Data Analytics**
+Developed Python functions utilizing Spark to answer the following questions:
+1. **Player Contracts Analysis:**
+   - Identified clubs with the highest number of players whose contracts ended after a user-specified year.
+2. **Average Player Age Analysis:**
+   - Found clubs with the highest or lowest average player age for a given year, handling ties at rank boundaries.
+3. **Most Popular Nationality:**
+   - Determined the most frequent nationality for players each year from 2015–2022.
+
+---
+
+#### **Task III: Machine Learning Modeling**
+- **Objective:** Predict players' overall value based on their skillsets.
+- Models Built:
+  - **Spark MLlib:** Implemented two regressors with hyperparameter tuning.
+  - **PyTorch:** Built two neural networks (e.g., shallow vs. deep) to compare performance.
+- **Feature Engineering:** Included thorough data cleaning and preparation to improve model accuracy.
+- **Key Results:** Documented the impact of tunable parameters and provided a comparative analysis of model performance.
+
+---
+
+#### **Task IV: Cloud Deployment**
+- Deployed analytics and machine learning code to the cloud, skipping database creation for simplicity.
+- Additional credit earned by deploying PostgreSQL on the cloud.
+
+---
+
+### How to Run the Code
+1. **Clone the Repository:**
+   ```bash
+   git clone https://github.com/YourUsername/repository-name.git
+   cd repository-name
+
+| Micah Baldonado | Rolian Tan
+|:----------------|------------------------:|
 
 
 
