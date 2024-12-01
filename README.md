@@ -3,7 +3,7 @@
 # Systems and Toolchains Course Project
 
 ### **Overview**
-This project, completed as part of the **Systems and Toolchains** course at Carnegie Mellon University, involves working with the FIFA dataset to perform database management, analytics, machine learning, and cloud deployment tasks. **Grade: 107/100**, with additional credit for exceptional performance.
+This project, completed as part of the **Systems and Toolchains** course at Carnegie Mellon University, involves working with the FIFA dataset to perform database management, analytics, machine learning, and cloud deployment tasks. **Grade: 107/100**
 
 ---
 
